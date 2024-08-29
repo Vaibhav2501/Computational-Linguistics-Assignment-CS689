@@ -1,0 +1,13 @@
+I learned from this comparison is that, 
+If human being forms word groups from sentences, it divides sentences into word groups such that each word group has semantic unit.
+But the Tokenizers divides the sentences into word groups based on its algorithm. 
+For example, BPE tokenization starts with a vocabulary of characters or subwords and iteratively merges the most frequent pairs of tokens to create a new vocabulary. This process continues until the desired vocabulary size is reached.
+
+In Tokenizers vocabulary, each word is breaked into seperate characters or even matras are seprated to form one token.
+While human being even forms one word group which may contain more than one words in it.
+For example, as Sir discussed in the class "kha_raha_hai" is one word group according to us. But tokenizers will divide it into multiple tokens.
+Tokenizers do not consider sematics of tokens while dividing it into tokens.
+
+We do not divide it into matras and break the words to form one token.
+So, because of this accuracy is very low. vocabulary size of tokenizers is very large compared to our vocabulary.
+There are not many tokens which match in both vocabularies.
